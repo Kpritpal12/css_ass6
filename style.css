@@ -1,0 +1,155 @@
+.item1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sq{
+    
+    width: 100px;
+    height: 100px;
+    background-color: steelblue;
+    position: relative;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    margin: 20px;
+}
+@keyframes move{
+    0%{
+        transform: skew(-15deg);
+    }
+    25%{
+        transform: skew(15deg);
+    }
+    50%{
+        transform: skew(-15deg);
+    }
+    75%{
+        transform: skew(15deg);
+    }
+    100%{
+        transform: skew(-15deg);
+    }
+}
+.rh{
+    
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    animation-name: rhombus;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    margin: 20px;
+}
+@keyframes rhombus{
+    0%{
+        transform: skew(-20deg);
+    }
+    25%{
+        transform: skew(20deg);
+    }
+    50%{
+        transform: skew(-20deg);
+    }
+    75%{
+        transform: skew(20deg);
+    }
+    100%{
+        transform: skew(-20deg);
+    }
+}
+.di{
+    
+    width: 100px;
+    height: 100px;
+    background-color: steelblue;
+    position: relative;
+    animation-name: dig_rot;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    margin: 20px;
+}
+@keyframes dig_rot{
+    0%{
+        transform: rotate(-360deg);
+    }
+  
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.ani1{
+    
+    width: 100px;
+    height: 100px;
+    background-color: steelblue;
+    position: relative;
+    animation-name: animation1;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    margin: 20px;
+}
+
+@keyframes animation1{
+    0%{
+        height: 50px;
+    }
+  
+    100%{
+        height: 100px;
+    }
+}
+.ani2{
+    
+    width: 100px;
+    height: 100px;
+    background-color: darkred;
+    position: relative;
+    animation-name: animation2;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    margin: 20px;
+}
+
+@keyframes animation2{
+    0%{
+        width: 50px;
+    }
+  
+    100%{
+        width: 100px;
+    }
+}
+.ani3{
+    
+    width: 100px;
+    height: 100px;
+    background-color: green;
+   
+    position: relative;
+    animation-name: animation3;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 10s;
+    margin: 20px;
+}
+@keyframes animation3{
+    0%{
+        transform: rotate(-90deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(-90deg);
+    }
+    75%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(-90deg);
+    }
+}
+body h2{
+    text-align: center;
+}
